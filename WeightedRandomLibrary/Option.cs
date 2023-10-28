@@ -8,6 +8,8 @@ public class Option<T>
 
     public Option(T value, int weight)
     {
+        if (weight < 1) { throw new ArgumentOutOfRangeException($"The value {weight} is not valid. Weight must be greater than 0."); }
+
         Value = value;
         Weight = weight;
     }

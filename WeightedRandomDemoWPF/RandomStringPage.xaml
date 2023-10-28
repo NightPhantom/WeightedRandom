@@ -24,6 +24,7 @@
             <Setter Property="Width" Value="308" />
             <Setter Property="IsSnapToTickEnabled" Value="True" />
             <Setter Property="SmallChange" Value="1" />
+            <Setter Property="Minimum" Value="1" />
             <Setter Property="Maximum" Value="100" />
             <Setter Property="Value" Value="50" />
             <Setter Property="Cursor" Value="Hand" />
