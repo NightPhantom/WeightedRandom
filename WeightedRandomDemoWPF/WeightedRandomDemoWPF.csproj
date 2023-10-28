@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\pexels-andie-3647046.jpg" />
+    <None Remove="Resources\pexels-andie-3746517.jpg" />
+    <None Remove="Resources\pexels-jill-wellington-3776950.jpg" />
+    <None Remove="Resources\pexels-nikolaeva-nastia-9540183.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\pexels-andie-3647046.jpg" />
+    <Resource Include="Resources\pexels-andie-3746517.jpg" />
+    <Resource Include="Resources\pexels-jill-wellington-3776950.jpg" />
+    <Resource Include="Resources\pexels-nikolaeva-nastia-9540183.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WeightedRandomLibrary\WeightedRandomLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

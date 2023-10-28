@@ -1,0 +1,75 @@
+﻿<Page x:Class="WeightedRandomDemoWPF.IterationsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WeightedRandomDemoWPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="IterationsPage">
+
+    <Page.Resources>
+        <Style x:Key="TitleStyle" TargetType="Label">
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="OptionTextStyle" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Margin" Value="2" />
+        </Style>
+        <Style x:Key="WeightSliderStyle" TargetType="Slider">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Width" Value="308" />
+            <Setter Property="IsSnapToTickEnabled" Value="True" />
+            <Setter Property="SmallChange" Value="1" />
+            <Setter Property="Maximum" Value="100" />
+            <Setter Property="Value" Value="50" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Margin" Value="1" />
+        </Style>
+        <Style x:Key="RollBarStyle" TargetType="ProgressBar">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Height" Value="10" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Button x:Name="runButton" Content="Run" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="runButton_Click"/>
+        <Label x:Name="labelIterationsTitle" Content="Iterations:" HorizontalAlignment="Left" Margin="40,7,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelIterationsValue" Content="{Binding Value, ElementName=sliderIterations}" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="sliderIterations" HorizontalAlignment="Left" Margin="105,11,0,0" VerticalAlignment="Top" Width="685" Minimum="100" Maximum="1000000" Value="10000" SmallChange="1" LargeChange="100" TickFrequency="1000" TickPlacement="None" Cursor="Hand" IsSnapToTickEnabled="True"/>
+        <StackPanel Orientation="Horizontal" Margin="12,50,0,0">
+            <StackPanel>
+                <Label Content="Options" Style="{StaticResource TitleStyle}" />
+                <StackPanel>
+                    <TextBlock x:Name="textBlockA" Text="A" Style="{StaticResource OptionTextStyle}" />
+                    <TextBlock x:Name="textBlockB" Text="B" Style="{StaticResource OptionTextStyle}" />
+                    <TextBlock x:Name="textBlockC" Text="C" Style="{StaticResource OptionTextStyle}" />
+                    <TextBlock x:Name="textBlockD" Text="D" Style="{StaticResource OptionTextStyle}" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Weights" Style="{StaticResource TitleStyle}" />
+                <StackPanel >
+                    <Slider x:Name="sliderWeightA" Style="{StaticResource WeightSliderStyle}" />
+                    <Slider x:Name="sliderWeightB" Style="{StaticResource WeightSliderStyle}" />
+                    <Slider x:Name="sliderWeightC" Style="{StaticResource WeightSliderStyle}" />
+                    <Slider x:Name="sliderWeightD" Style="{StaticResource WeightSliderStyle}" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Roll Count" Style="{StaticResource TitleStyle}" />
+                <StackPanel >
+                    <ProgressBar x:Name="rollCountA" Style="{StaticResource RollBarStyle}" />
+                    <ProgressBar x:Name="rollCountB" Style="{StaticResource RollBarStyle}" />
+                    <ProgressBar x:Name="rollCountC" Style="{StaticResource RollBarStyle}" />
+                    <ProgressBar x:Name="rollCountD" Style="{StaticResource RollBarStyle}" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

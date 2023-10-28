@@ -1,0 +1,31 @@
+﻿<Window x:Class="WeightedRandomDemoWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeightedRandomDemoWPF"
+        mc:Ignorable="d"
+        Title="WeightedRandom WPF Demo" Height="450" Width="800" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style x:Key="BorderStyle" TargetType="Border">
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="CornerRadius" Value="10,10,10,10" />
+            <Setter Property="Padding" Value="10,10,10,10" />
+            <Setter Property="Margin" Value="5,5,5,5" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <Border Style="{StaticResource BorderStyle}">
+                <Frame x:Name="iterationsFrame" Content="Frame" Source="/IterationsPage.xaml"/>
+            </Border>
+            <Border Style="{StaticResource BorderStyle}">
+                <Frame x:Name="imagesFrame" Content="Frame" Source="/RandomImagePage.xaml"/>
+            </Border>
+            <Border Style="{StaticResource BorderStyle}">
+                <Frame x:Name="stringsFrame" Content="Frame" Source="/RandomStringPage.xaml"/>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>
