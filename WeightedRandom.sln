@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeightedRandomDemoCLI", "We
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeightedRandomDemoWPF", "WeightedRandomDemoWPF\WeightedRandomDemoWPF.csproj", "{37BA2F5B-935D-4FDC-A821-3B095FCBFC62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeightedRandomDemoWindowsForms", "WeightedRandomDemoWindowsForms\WeightedRandomDemoWindowsForms.csproj", "{C7A7A41B-E990-4036-B6E3-AE957941A19B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeightedRandomDemoWindowsForms", "WeightedRandomDemoWindowsForms\WeightedRandomDemoWindowsForms.csproj", "{C7A7A41B-E990-4036-B6E3-AE957941A19B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeightedRandomLibrary.Tests.NUnit", "WeightedRandomLibrary.Tests.NUnit\WeightedRandomLibrary.Tests.NUnit.csproj", "{46BFB377-9FD4-44CE-9AA2-767D43B75ABC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C7A7A41B-E990-4036-B6E3-AE957941A19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7A7A41B-E990-4036-B6E3-AE957941A19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7A7A41B-E990-4036-B6E3-AE957941A19B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46BFB377-9FD4-44CE-9AA2-767D43B75ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46BFB377-9FD4-44CE-9AA2-767D43B75ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46BFB377-9FD4-44CE-9AA2-767D43B75ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46BFB377-9FD4-44CE-9AA2-767D43B75ABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,11 +4,11 @@ public class Option<T>
 {
     public T Value { get; }
 
-    public int Weight { get; set; }
+    public int Weight { get; private set; }
 
     public Option(T value, int weight)
     {
-        if (weight < 1) { throw new ArgumentOutOfRangeException($"The value {weight} is not valid. Weight must be greater than 0."); }
+        if (weight < 1) { throw new ArgumentOutOfRangeException(nameof(weight), $"The value {weight} is not valid {nameof(weight)}. The value of the parameter {nameof(weight)} must be greater than 0."); }
 
         Value = value;
         Weight = weight;
