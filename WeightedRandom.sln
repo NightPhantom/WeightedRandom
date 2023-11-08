@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeightedRandomDemoWindowsFo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeightedRandomLibrary.Tests.NUnit", "WeightedRandomLibrary.Tests.NUnit\WeightedRandomLibrary.Tests.NUnit.csproj", "{46BFB377-9FD4-44CE-9AA2-767D43B75ABC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeightedRandomDemoWebAPI", "WeightedRandomDemoWebAPI\WeightedRandomDemoWebAPI.csproj", "{89D0E69B-9617-430B-926F-63A8CB949D12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{46BFB377-9FD4-44CE-9AA2-767D43B75ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46BFB377-9FD4-44CE-9AA2-767D43B75ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46BFB377-9FD4-44CE-9AA2-767D43B75ABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89D0E69B-9617-430B-926F-63A8CB949D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D0E69B-9617-430B-926F-63A8CB949D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D0E69B-9617-430B-926F-63A8CB949D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D0E69B-9617-430B-926F-63A8CB949D12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
