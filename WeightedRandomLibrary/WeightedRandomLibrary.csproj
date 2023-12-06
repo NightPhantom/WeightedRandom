@@ -4,6 +4,28 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Weighted Random</Title>
+    <Authors>AndyCosta</Authors>
+    <PackageId>AndyCosta.WeightedRandom</PackageId>
+    <Description>A concise C# library for effortless random selection of items from a list, each with its own probability. Perfect for scenarios requiring diverse likelihoods in a simple and efficient package.</Description>
+    <Copyright>Copyright 2023 Andy Costa</Copyright>
+    <PackageProjectUrl>https://github.com/NightPhantom/WeightedRandom</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/NightPhantom/WeightedRandom</RepositoryUrl>
+    <PackageTags>C#;random;randomizer;weighted;option;</PackageTags>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
