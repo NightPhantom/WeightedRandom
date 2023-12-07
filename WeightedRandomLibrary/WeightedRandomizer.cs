@@ -8,9 +8,9 @@ public class WeightedRandomizer<T>
 
     private readonly int totalWeight;
 
-    public WeightedRandomizer(Option<T>[] options, int? seed = null)
+    public WeightedRandomizer(ICollection<Option<T>> options, int? seed = null)
     {
-        if (options == null || options.Length == 0) {  throw new ArgumentNullException(nameof(options), $"The {nameof(options)} parameter must not be null or empty."); }
+        if (options == null || options.Count() == 0) {  throw new ArgumentNullException(nameof(options), $"The {nameof(options)} parameter must not be null or empty."); }
 
         this.totalWeight = options.Sum(i => i.Weight);
         if (this.totalWeight < 1) { throw new ArgumentOutOfRangeException(nameof(options), $"The sum of the weights provided in the {nameof(options)} parameter should be greater than 0."); }
