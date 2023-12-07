@@ -31,7 +31,9 @@ Option<char> selection = weightedRandom.Next();
 
 ## Version History
 
-* 0.1
+* 1.0.1
+    * WeightedRandomizer can now receive options as any ICollection, instead of only as an array
+* 1.0.0
     * Initial Release
 
 ## License
